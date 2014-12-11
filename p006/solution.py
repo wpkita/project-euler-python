@@ -7,10 +7,14 @@ def pyramidal_sum_of_squares(up_to):
     return (2 * up_to ** 3 + 3 * up_to ** 2 + up_to) / 6
 
 
-def square_of_sum(up_to):
+def naive_square_of_sum(up_to):
     return sum(range(1, up_to + 1)) ** 2
+
+
+def arithmetic_series_square_of_sum(up_to):
+    return (up_to * (up_to + 1) / 2) ** 2
 
 if __name__ == '__main__':
     VALUE = 100
 
-    print('Sum square difference: ', square_of_sum(VALUE) - pyramidal_sum_of_squares(VALUE))
+    print('Sum square difference: ', arithmetic_series_square_of_sum(VALUE) - pyramidal_sum_of_squares(VALUE))
