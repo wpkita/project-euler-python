@@ -10,10 +10,12 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
-multiples_count = 0
 
-for i in range(1, 1000):
-    if i % 5 == 0 or i % 3 == 0:
-        multiples_count += i
+def get_sum_of_multiples_using_loop(maximum):
+    sum_of_multiples = 0
 
-print('Number of multiples of 3 and 5: ', multiples_count)
+    for i in range(1, maximum):
+        if i % 5 == 0 or i % 3 == 0:
+            sum_of_multiples += i
+
+    return sum_of_multiples
