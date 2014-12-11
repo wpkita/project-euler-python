@@ -1,4 +1,4 @@
-def fib_with_max_num(max_num):
+def fibonacci_numbers_up_to(max_num):
     first = 1
     second = 2
 
@@ -20,7 +20,7 @@ def fib_with_max_num(max_num):
     return seq
 
 if __name__ == '__main__':
-    fibs_not_exceeding_four_million = fib_with_max_num(4000000)
+    fibs_not_exceeding_four_million = fibonacci_numbers_up_to(4000000)
     sum_of_even_fibs_not_exceeding_four_million = 0
     for i in fibs_not_exceeding_four_million:
         if i % 2 == 0:
