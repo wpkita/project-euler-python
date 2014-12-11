@@ -2,10 +2,12 @@ from nose.tools import *
 from p006.solution import *
 
 
-def test_sum_of_squares():
-    sum_of_squares_up_to_10 = sum_of_squares(10)
+def test_naive_sum_of_squares():
+    assert_equal(naive_sum_of_squares(10), 385)
 
-    assert_equal(sum_of_squares_up_to_10, 385)
+
+def test_pyramidal_sum_of_squares():
+    assert_equal(pyramidal_sum_of_squares(10), 385)
 
 
 def test_square_of_sums():
