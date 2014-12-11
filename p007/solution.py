@@ -17,3 +17,6 @@ def generate_nth_prime(n):
             prime_count += 1
 
     return current_number
+
+if __name__ == '__main__':
+    print('10,001st prime number: ', generate_nth_prime(10001))
