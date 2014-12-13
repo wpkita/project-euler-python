@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
     # Fix reference in tests file to point to p### package
     for line in fileinput.input(tests_file_name, inplace=True):
-        print(line.replace('problem', problem_label), end='')
+        print(line.replace('problem_template', problem_label), end='')

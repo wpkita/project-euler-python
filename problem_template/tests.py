@@ -1,2 +1,2 @@
 from nose.tools import *
-from problem.solution import *
+from problem_template.solution import *
