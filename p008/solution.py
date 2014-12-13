@@ -11,8 +11,7 @@ def get_highest_adjacent_product(value, number_of_adjacencies):
 
     for i in range(len(value) - (number_of_adjacencies - 1)):
         current_product = product([int(c) for c in value[i:i + number_of_adjacencies]])
-        if current_product > highest_product_so_far:
-            highest_product_so_far = current_product
+        highest_product_so_far = max(highest_product_so_far, current_product)
 
     return highest_product_so_far
 
