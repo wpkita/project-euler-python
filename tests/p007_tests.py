@@ -8,6 +8,7 @@ def test_is_prime():
     assert_false(is_prime(4))
     assert_true(is_prime(5))
     assert_false(is_prime(6))
+    assert_false(is_prime(9))
 
 
 def test_generate_nth_prime():
